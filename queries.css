@@ -35,6 +35,9 @@
         width: 50%;
         height: 50%;
     }
+
+    body{
+        font-size: 12px;
     img {
         max-width: 100%;
         height: auto;
@@ -50,6 +53,9 @@
         width: 50%;
         height: 50%;
     }
+
+    body{
+        font-size: 12px;
 
     img {
         max-width: 100%;
