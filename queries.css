@@ -1,5 +1,6 @@
 /*1200px*/
 @media only screen and (max-width: 1200px) {
+    
     .hero-text-box {
         width: 90%;
         padding: 0 2%;
@@ -10,10 +11,16 @@
     body{
         font-size: 16px;
     }
+    img {
+        max-width: 100%;
+        height: auto;
+        width: auto\9; /* ie8 */
+    }
 }
 
 /*1024px*/
 @media only screen and (max-width: 1024px) {
+
     img {
         max-width: 100%;
         height: auto;
@@ -23,10 +30,14 @@
 
 /*767px*/
 @media only screen and (max-width: 767px) {
-    .hero-text-box {
-        width: 70%;
-        padding: 50 2%;
 
+    .hero-text-box {
+        position: absolute;
+        width: 1140px;
+        top: 80%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+    }
     img {
         max-width: 100%;
         height: auto;
@@ -37,9 +48,14 @@
 
 /*480px*/
 @media only screen and (max-width: 480px) {
+
     .hero-text-box {
-        width: 70%;
-        padding: 50 2%;
+        position: absolute;
+        width: 1140px;
+        top: 80%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+    }
 
     img {
         max-width: 100%;
