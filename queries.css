@@ -1,6 +1,6 @@
 /*1200px*/
 @media only screen and (max-width: 1200px) {
-    
+
     .hero-text-box {
         width: 90%;
         padding: 0 2%;
@@ -33,9 +33,9 @@
 
     .hero-text-box {
         position: absolute;
-        width: 1140px;
-        top: 80%;
-        left: 20%;
+        width: 50%;
+        top: 50%;
+        left: 30%;
         transform: translate(-50%, -50%);
     }
     img {
@@ -51,9 +51,9 @@
 
     .hero-text-box {
         position: absolute;
-        width: 1140px;
-        top: 80%;
-        left: 20%;
+        width: 50%;
+        top: 60%;
+        left: 30%;
         transform: translate(-50%, -50%);
     }
 
