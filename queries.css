@@ -20,6 +20,7 @@
 
 /*1024px*/
 @media only screen and (max-width: 1024px) {
+    
 
     .row {
         padding: 0 2%;
@@ -34,7 +35,11 @@
 
 /*767px*/
 @media only screen and (max-width: 767px) {
-
+    .logo{ 
+        max-width: 20%;
+        height: auto;
+        width: auto\9; /* ie8 */
+    }
     .row {
         padding: 0 2%;
     }
@@ -43,7 +48,7 @@
         font-size: 12px;
     }
     img {
-        max-width: 100%;
+        max-width: 20%;
         height: auto;
         width: auto\9; /* ie8 */
     }
@@ -52,6 +57,11 @@
 
 /*480px*/
 @media only screen and (max-width: 480px) {
+    .logo{ 
+        max-width: 20%;
+        height: auto;
+        width: auto\9; /* ie8 */
+    }
 
     .row {
         padding: 0 2%;
