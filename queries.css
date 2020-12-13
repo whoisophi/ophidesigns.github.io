@@ -86,6 +86,11 @@
         height: auto;
         width: auto\9; /* ie8 */
     }
+    .social li {
+        display: inline-block;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
 
 }
 
