@@ -21,6 +21,10 @@
 /*1024px*/
 @media only screen and (max-width: 1024px) {
 
+    .row {
+        padding: 0 2%;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -31,9 +35,8 @@
 /*767px*/
 @media only screen and (max-width: 767px) {
 
-    .hero-text-box {
-        width: 50%;
-        height: 50%;
+    .row {
+        padding: 0 2%;
     }
 
     body{
@@ -50,9 +53,8 @@
 /*480px*/
 @media only screen and (max-width: 480px) {
 
-    .hero-text-box {
-        width: 50%;
-        height: 50%;
+    .row {
+        padding: 0 2%;
     }
 
     body{
