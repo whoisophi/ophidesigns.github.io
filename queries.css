@@ -40,6 +40,11 @@
         height: auto;
         width: auto\9; /* ie8 */
     }
+
+    .main-nav li {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
     .row {
         padding: 0 2%;
     }
@@ -61,6 +66,11 @@
         max-width: 20%;
         height: auto;
         width: auto\9; /* ie8 */
+    }
+
+    .main-nav li {
+        margin-left: 20px;
+        margin-top: 10px;
     }
 
     .row {
