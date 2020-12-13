@@ -36,13 +36,7 @@
     .hero-text-box {
         width: 70%;
         padding: 0 2%;
-    }
-    .row {
-        padding: 0 2%;
-    }
-    body{
-        font-size: 12px;
-    }
+
     img {
         max-width: 100%;
         height: auto;
