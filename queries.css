@@ -32,10 +32,8 @@
 @media only screen and (max-width: 767px) {
 
     .hero-text-box {
-        position: absolute;
         width: 50%;
         top: 50%;
-        left: 30%;
         transform: translate(-50%, -50%);
     }
     img {
@@ -50,10 +48,8 @@
 @media only screen and (max-width: 480px) {
 
     .hero-text-box {
-        position: absolute;
         width: 50%;
         top: 60%;
-        left: 30%;
         transform: translate(-50%, -50%);
     }
 
