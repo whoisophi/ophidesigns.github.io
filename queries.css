@@ -14,18 +14,30 @@
 
 /*1024px*/
 @media only screen and (max-width: 1024px) {
-
+    img {
+        max-width: 100%;
+        height: auto;
+        width: auto\9; /* ie8 */
+    }
 }
 
 /*767px*/
 @media only screen and (max-width: 767px) {
-
+    img {
+        max-width: 100%;
+        height: auto;
+        width: auto\9; /* ie8 */
+    }
 
 }
 
 /*480px*/
 @media only screen and (max-width: 480px) {
-
+    img {
+        max-width: 100%;
+        height: auto;
+        width: auto\9; /* ie8 */
+    }
 
 }
 
