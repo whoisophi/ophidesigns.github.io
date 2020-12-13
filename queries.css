@@ -23,6 +23,10 @@
 
 /*767px*/
 @media only screen and (max-width: 767px) {
+    .hero-text-box {
+        width: 70%;
+        padding: 50 2%;
+
     img {
         max-width: 100%;
         height: auto;
