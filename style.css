@@ -1,0 +1,290 @@
+/* base */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #fff;
+    color: #505050;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-rendering: optimizeLegibility
+}
+
+/* reusable */
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.section{
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.section-group{
+    padding: 30px;
+    margin-bottom: 50px;
+    margin-left: 0;
+}
+
+/* headings */
+
+h1,
+h2 {
+    margin-top: 0;
+    color:#fff;
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+h1 {
+    margin-bottom: 0px;
+    font-size: 240%;
+}
+
+h2{
+    margin-bottom: 20px;
+    font-size: 100%;
+}
+
+h3{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color:#000;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    
+
+}
+
+h4{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color:#000;
+    font-size: 100%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+
+}
+
+h5{
+    text-align: center;
+    margin-top: 0;
+    color:rgb(0, 0, 0);
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+h6{
+    text-align: center;
+    margin-top: 50px;
+    color:rgb(0, 0, 0);
+    font-size: 200%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+/* buttons */
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200;
+    color:#fff;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+
+}
+
+.btn-ghost:link,
+.btn-ghost:link{
+    border: 1px solid #e67e22;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #d35400;
+}
+
+/* works */
+
+.works:hover {
+    opacity: 0.8;
+}
+
+/* header */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/herobyandrefurtado.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    height: 150px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    transition: border-bottom 0.2s;
+
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #fff;
+}
+
+/*footer*/
+
+footer {
+    margin-top: 50px;
+    background-color: rgb(26, 26, 26);
+    height: 150px;
+}
+
+.footer-nav {
+    float: left;
+    list-style: none;
+    
+}
+
+.social {
+    float: right;
+    list-style: none;
+    
+}
+
+/*footer buttons*/
+
+.footer-nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social li a:link,
+.social li a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    transition: border-bottom 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active,
+.social li a:link,
+.social li a:visited {
+    border-bottom: 2px solid #fff;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    font-size: 80%;
+}
+
+
+/* icon color*/
+
+ion-icon {
+    color: rgb(0, 0, 0);
+  }
+
+/* vendor contact form - Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #e67e22;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #d35400;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
