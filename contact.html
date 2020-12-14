@@ -33,6 +33,32 @@
                 </div>
                 
             </header>
+                <head>
+                <title>Contact Form</title>
+                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+                    <script type="text/javascript">
+                        (function() {
+                            // https://dashboard.emailjs.com/admin/integration
+                            emailjs.init('user_LIB2qBT64ioNtbveV8Bit');
+                        })();
+                    </script>
+                    <script type="text/javascript">
+                        window.onload = function() {
+                            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                                event.preventDefault();
+                                // generate a five digit number for the contact_number variable
+                                this.contact_number.value = Math.random() * 100000 | 0;
+                                // these IDs from the previous steps
+                                emailjs.sendForm('contact_service', 'contact_form', this)
+                                    .then(function() {
+                                        console.log('SUCCESS!');
+                                    }, function(error) {
+                                        console.log('FAILED...', error);
+                                    });
+                            });
+                        }
+                    </script>
+                </head>
             
             <section class="section">
                 <div class="row">
@@ -44,19 +70,26 @@
             </section>
                 
 
-            <div class="container">
-                <form action="action_page.php" method="POST">
-              
-                  <label for="name">Name</label>
-                  <input type="text" id="name" name="name" placeholder="Your name..">
-                  <label for="email">Email</label>
-                  <input type="text" id="email" name="email" placeholder="Your email..">
-                  <label for="message">Message</label>
-                  <textarea id="message" name="message" placeholder="THIS CONTACT FORM IS FOR DEMONSTRATION PURPOSESLY ONLY. Github does not allow PHP for emails to pass through here. However, you can email me at nicholasknwong@gmail.com if you are interested." style="height:200px"></textarea>
-                  <input type="submit" value="Submit">
-              
-                </form>
-              </div>
+                <section class="section">
+                    <form id="contact-form">
+                        <input type="hidden" name="contact_number">
+                        <div class="row">
+                            <label>Name</label>
+                            <input type="text" name="user_name">
+                        </div>
+                        <div class="row">
+                            <label>Email</label>
+                            <div class="row">
+                            <input type="text" name="user_email">
+                            </div>
+                        </div>
+                        <div class="row">   
+                            <label>Message</label>
+                            <textarea name="message"></textarea>
+                            <input type="submit" value="Send">
+                        </div> 
+                    </form>
+                </section>  
             
 
             <footer>
