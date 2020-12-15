@@ -255,6 +255,10 @@ ion-icon {
     color: rgb(0, 0, 0);
   }
 
+ion-icon:hover {
+    color: #e67e22;
+  }
+
 /* vendor contact form - Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     width: 100%; /* Full width */
