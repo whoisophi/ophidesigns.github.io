@@ -144,7 +144,7 @@ h6{
 /* header */
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), <img src = "herobyandrefurtado.jpg">;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), <img src="herobyandrefurtado.jpg">;
     background-size: cover;
     background-position: center;
     height: 90vh;
