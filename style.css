@@ -94,15 +94,14 @@ h5{
 }
 
 h6{
-    text-align: center;
-    margin-top: 50px;
-    color:rgb(0, 0, 0);
-    font-size: 200%;
+    color:rgb(255, 255, 255);
+    font-size: 150%;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1px;
     word-spacing: 4px;
 }
+
 
 /* buttons */
 
@@ -145,7 +144,7 @@ h6{
 /* header */
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(herobyandrefurtado.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/herobyandrefurtado.jpg);
     background-size: cover;
     background-position: center;
     height: 90vh;
@@ -249,7 +248,7 @@ footer p {
 }
 
 
-/* icon color*/
+/* custom icon color and hover*/
 
 ion-icon {
     color: rgb(0, 0, 0);
@@ -275,7 +274,7 @@ ion-icon:hover {
     float: left;
     overflow: hidden;
     margin: 10px 1%;
-    background: #3085a3;
+    background: #000000;
     text-align: center;
     cursor: pointer;
   }
@@ -285,7 +284,7 @@ ion-icon:hover {
     display: block;
     min-height: 100%;
     max-width: 100%;
-    opacity: 0.8;
+    opacity: 0.1;
   }
   
   .grid figure figcaption {
@@ -321,16 +320,16 @@ ion-icon:hover {
     opacity: 0;
   }
   
-  .grid figure h2 {
+  .grid figure h6 {
     word-spacing: -0.15em;
     font-weight: 300;
   }
   
-  .grid figure h2 span {
+  .grid figure h6 span {
     font-weight: 800;
   }
   
-  .grid figure h2,
+  .grid figure h6,
   .grid figure p {
     margin: 0;
   }
@@ -343,16 +342,18 @@ ion-icon:hover {
   /* Individual effects */
   
   /*---------------*/
-  /***** Lily *****/
+  /***** CUSTOM REVERSE Lily" *****/
   /*---------------*/
   
+  /*actual image effect*/
   figure.effect-lily img {
     max-width: none;
     width: -webkit-calc(100% + 50px);
     width: calc(100% + 50px);
-    opacity: 0.7;
+    /*blacked out reverse is 0*/
+    opacity: 0.1;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
+    transition: opacity 0.35s, transform 1s;
     -webkit-transform: translate3d(-40px,0, 0);
     transform: translate3d(-40px,0,0);
   }
@@ -370,41 +371,29 @@ ion-icon:hover {
     height: 50%;
   }
   
-  figure.effect-lily h2,
-  figure.effect-lily p {
+  figure.effect-lily h6 {
     -webkit-transform: translate3d(0,40px,0);
     transform: translate3d(0,40px,0);
   }
   
-  figure.effect-lily h2 {
-    -webkit-transition: -webkit-transform 0.35s;
-    transition: transform 0.35s;
-  }
-  
-  figure.effect-lily p {
-    color: rgba(255,255,255,0.8);
-    opacity: 0;
-    -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
-    transition: opacity 0.2s, transform 0.35s;
-  }
-  
   figure.effect-lily:hover img,
-  figure.effect-lily:hover p {
+  figure.effect-lily:hover h6 {
     opacity: 1;
   }
   
   figure.effect-lily:hover img,
-  figure.effect-lily:hover h2,
-  figure.effect-lily:hover p {
+  figure.effect-lily:hover h6 {
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
   }
   
-  figure.effect-lily:hover p {
+  figure.effect-lily:hover h6 {
     -webkit-transition-delay: 0.05s;
     transition-delay: 0.05s;
-    -webkit-transition-duration: 0.35s;
-    transition-duration: 0.35s;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    /*reverse text*/
+    opacity: 0;
   }
 
   /* end */
